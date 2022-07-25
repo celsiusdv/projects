@@ -1,0 +1,27 @@
+<div class="mainContainer">
+
+  <div class="backgroundWelcome">
+    <div class="welcome">
+      <label>Welcome</label>
+      <p>
+          Studying is the main source of knowledge. 
+        Books are indeed never failing friends of man. 
+        For a mature mind, reading is the greatest source of pleasure and
+        solace to distressed minds. 
+        The study of good books ennobles us and broadens our outlook. 
+        Therefore, the habit of reading should be cultivated. 
+      </p>
+    </div>
+  </div>
+
+  <div class="projects">
+    <h4>Projects</h4>
+    <ul>
+      <li *ngFor="let project of projects">
+        <a [href]="project.link">
+          {{project.title}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

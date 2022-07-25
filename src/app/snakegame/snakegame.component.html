@@ -1,0 +1,31 @@
+<div class="container">
+  <label> snake game</label>
+
+  <div class="gifAndImplementationContainer">
+    <div class="gifDiv">
+       <img src="assets/icons/city.gif" class="snakeGif">
+    </div>
+
+    <div class="implementationDiv">
+      <p>implementations</p>
+       <ul style="line-height: 25px;">
+         <li *ngFor="let item of implementations">{{item}}</li>
+       </ul>
+      <a (click)="openTab()">
+        <button class="sourceBtn">
+          <fa-icon [icon]="github" class="githubIcon"></fa-icon>
+           code
+        </button>
+      </a>
+    </div>
+
+    <div class="projectsDiv">
+      <p>others projects</p>
+       <ul style="line-height: 35px; ">
+         <li><a href="/youtubescraper">youtube playlist scraper</a></li>
+         <li><a href="/chatapp">chat app</a></li>
+         <li class="active">snake game</li>
+       </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,128 @@
+.container{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.container label{
+  align-self: center;
+  margin-right: 300px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 35px;
+  padding-top: 10px;
+  color: crimson;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.651)
+  
+}
+.gifAndImplementationContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  
+}
+/*----------------------------div gif box*/
+.gifDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.3;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 
+  inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+  inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+}
+
+.scrapingGif{
+  width: 400px;
+  height: 340px;
+  margin: 10px;
+}
+/*--------------------------implementation gif box*/
+.implementationDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  flex: 0.2;
+  margin: 20px;
+  font-size: 18px;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.651)
+  
+}
+.implementationDiv p{
+  margin-top: 25px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid aqua;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.651)
+}
+
+.projectsDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  flex: 0.3;
+  margin: 20px;
+  font-size: 18px;
+   
+}
+.projectsDiv p{
+  margin-top: 25px;
+  font-size: 25px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgb(220, 20, 60);
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.651)
+} 
+.projectsDiv li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(199, 194, 187);
+  transition: 0.1s;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.651)
+}
+.projectsDiv li a:hover{
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: none;
+  color: crimson;
+}
+.projectsDiv li.active {
+  font-size: 25px;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.651);
+  color: rgba(85, 84, 84, 0.438);
+}
+.sourceBtn{
+  margin-bottom: 20px;
+  height: 25px;
+  border-radius: 4px;
+  border: none;
+  transition: 0.1s;
+  box-shadow: inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+              inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+  background-color: rgba(27, 27, 27, 0.541);
+}
+a .sourceBtn {
+  color: rgb(199, 194, 187);
+  text-decoration: none;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.651);
+  font-size: 16px;
+}
+.githubIcon{
+  color: crimson;
+  font-size: 16px;
+  transition: 0.1s;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}
+.sourceBtn:hover{
+  transform: translateY(2px);
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.sourceBtn:hover .githubIcon{
+  color: rgb(18, 233, 197);
+}

@@ -1,0 +1,140 @@
+.toolsDiv{
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*//////////// label tool title////////*/
+.labelDiv{
+  display: flex;
+  flex-direction: row;
+  flex: 0.5;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 50px;
+  /*background-color: rgb(66, 58, 58);/**/
+}
+.labelDiv label{
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.651);
+  
+}
+.iconTool {
+  margin-right: 15px;
+  font-size: 30px;
+  color: rgb(220, 20, 60); /**/
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+
+}
+
+
+/*///////////////////////////////icons container///////////*/
+.iconsDiv{
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 50px;
+  /*background-color: rgb(47, 50, 77);/**/
+}
+/*-------------------------------------icons div*/
+.javaDiv{
+  display: flex;
+  width: 110px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  background-color: rgba(27, 27, 27, 0.541);
+  border-radius: 50%;
+  box-shadow: 
+      inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+      inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+}
+.javaLogo{
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}
+
+.javaFxDiv{
+  display: flex;
+  width: 110px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  background-color: rgba(27, 27, 27, 0.541);
+  border-radius: 50%;
+  box-shadow: 
+      inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+      inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+}
+.javaFxLogo{
+  width: 77px;
+  height: 35px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}
+
+.seleniumDiv{
+  display: flex;
+  width: 110px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  background-color: rgba(27, 27, 27, 0.541);
+  border-radius: 50%;
+  box-shadow: 
+      inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+      inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+}
+.seleniumLogo {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}
+
+.springBootDiv{
+  display: flex;
+  width: 110px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  background-color: rgba(27, 27, 27, 0.541);
+  border-radius: 50%;
+  box-shadow: 
+      inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+      inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+}
+.springBootLogo{
+  width: 93px;
+  height: 72px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}
+
+.mySqlDiv{
+  display: flex;
+  width: 110px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  background-color: rgba(27, 27, 27, 0.541);
+  border-radius: 50%;
+  box-shadow: 
+      inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+      inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+}
+.mysqlLogo{
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}

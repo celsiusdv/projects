@@ -1,0 +1,33 @@
+<div class="navBar">
+
+  <div class="homeDiv">
+    <a href="">
+       <fa-icon [icon]="home" class="houseIcon"></fa-icon>
+    </a>
+  </div>
+
+  <div *ngIf="contactBtnClicked==false; else generateMail;"
+        class="separator">
+  </div><!-- middle div -->
+
+  <div class="menu">
+
+    <div class="contactDiv" (click)="setEmail()">
+      <fa-icon [icon]="envelope" class="envelopeIcon"></fa-icon>
+      <label>contact</label>
+    </div>
+
+    <div class="githubDiv">
+      <fa-icon [icon]="github" class="githubIcon"></fa-icon>
+      <label>sources</label>
+    </div>
+  </div>
+</div>
+<!-- generating copy and mail on contact button click -->
+<ng-template #generateMail>
+  <div class="separatorDiv">
+    <label>{{mail}}</label>
+    <button class="copyMailbtn" (click)="copyEmail()">copy</button>
+  </div>
+
+</ng-template>

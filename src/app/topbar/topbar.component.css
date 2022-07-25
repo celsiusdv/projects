@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap');
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+ /* box-shadow: 
+        0px 2px 4px rgba(0,0,0,0.15), 
+        0px 4px 8px rgba(0,0,0,0.15), 
+        0px 8px 16px rgba(0,0,0,0.15), 
+        0px 16px 32px rgba(0,0,0,0.15);/**/
+
+  box-shadow: 0px 1px 2px rgba(0,255,255,0.5), 
+        0px 2px 4px rgba(0,255,255,0.5), 
+        0px 4px 8px rgba(0,255,255,0.5), 
+        0px 8px 16px rgba(0,255,255,0.5);
+  
+}
+/* home icon section ----- --- ---  -- -- */
+.homeDiv{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  
+}
+.homeDiv a {
+  text-decoration: none;
+}
+.houseIcon {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  -webkit-appearance: none;
+  box-shadow: 
+   -10px -0px 15px rgba(0, 0, 0, 0.5),
+    10px 2px 15px rgba(59, 59, 59, 0.541);
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 12px solid rgb(136, 136, 136,1);
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(220, 20, 60);
+}
+.houseIcon::before{
+  position: inherit;
+  content: '';
+  width: 60px;
+  height: 60px;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  
+}
+.houseIcon:hover{
+  box-shadow: 
+  -10px -0px 15px rgba(85, 84, 84, 0.521),
+  10px 0px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(85, 84, 84, 0.521),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  color: rgb(18, 233, 197);
+}
+.houseIcon:active{
+  opacity: 0.7;
+}
+/*/////////////////////////////separator and mail div*/
+.separator{
+  display: flex;
+  align-items: center;
+  flex: 3;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.separatorDiv{
+  display: flex;
+  align-items: center;
+  flex: 3;
+  justify-content: center;
+  box-shadow: inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+  inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+  margin-top: 20px;
+  margin-bottom: 15px;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.separatorDiv label{
+  font-size: 20px;
+  margin-right: 5px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.651);
+}
+.separatorDiv button {
+  background-color: aqua;
+  border: none;
+  box-shadow: inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+  inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+  border-radius: 2px;
+  cursor: pointer;
+}
+.separatorDiv button:active{
+  opacity: 0.6;
+}
+
+/*//////////////////////contact and github div-----------------*/
+.menu {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  column-gap: 35px;
+  align-items: center;
+  justify-content: center;
+}
+/* ---------------------mail icon and label*/
+.contactDiv{
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  transition: 0.1s;
+  box-shadow: inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+              inset 5px 5px 9px rgba(94,104,121,0.3);/**/
+}
+.contactDiv:hover{
+  transform: translateY(2px);
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.contactDiv:hover .envelopeIcon{
+  color: rgb(18, 233, 197);
+}
+.contactDiv:active{
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.8;
+}
+.contactDiv label{
+  font-size: 22px;
+  margin-right: 12px;
+  font-weight: 600;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.651);
+}
+.envelopeIcon{
+  font-size: 30px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 12px;
+  transition: 0.1s;
+  color: rgb(220, 20, 60);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}
+
+/*///////////////////////////////////////////*/
+/* ---------------------github icon and label*/
+
+.githubDiv{
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  transition: 0.1s;
+  box-shadow: inset -5px -5px 9px rgba(0, 0, 0, 0.5), 
+  inset 5px 5px 9px rgba(94,104,121,0.3);
+}
+.githubDiv:hover{
+  transform: translateY(2px);
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.githubDiv:hover .githubIcon{
+  color: rgb(18, 233, 197);
+}
+.githubDiv:active{
+  opacity: 0.8;
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+.githubDiv label{
+  font-size: 22px;
+  margin-right: 12px;
+  font-weight: 600;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.651);
+}
+.githubIcon{
+  font-size: 30px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 12px;
+  transition: 0.1s;
+  color: rgb(220, 20, 60);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.651));
+}
